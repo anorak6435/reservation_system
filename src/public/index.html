@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uphill Hotel</title>
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Welcome to Uphill Hotel</h1>
+    <p>A cozy, family-run hideaway in the hills.</p>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p>
+        Uphill Hotel is a small, charming inn nestled in the hillside, run by the Thompson family since 1983. With fresh-baked bread every morning and cozy rooms, our mission is to make you feel like home.
+      </p>
+    </section>
+
+    <section id="rooms" class="section container">
+      <h2>Our Rooms</h2>
+      <div class="room-list">
+        <div class="room-card">
+          <h3>The Garden Room</h3>
+          <p>Queen bed, garden view, breakfast included.</p>
+        </div>
+        <div class="room-card">
+          <h3>The Sunset Suite</h3>
+          <p>King bed, private balcony, perfect for couples.</p>
+        </div>
+        <div class="room-card">
+          <h3>The Family Nook</h3>
+          <p>Two twin beds + sofa bed, perfect for kids.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="section container">
+      <h2>Make a Reservation</h2>
+      <form id="reservation-form" method="POST" action="/api/reservering">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required />
+
+        <label for="checkin" class="form-label">Check-in:</label>
+        <input type="date" class="form-control" id="checkin" name="checkin" required />
+
+        <label for="checkout" class="form-label">Check-out:</label>
+        <input type="date" class="form-control" id="checkout" name="checkout" required />
+
+        <label for="room" class="form-label">Room:</label>
+        <select id="room" name="room" class="form-select">
+          <option value="garden">The Garden Room</option>
+          <option value="sunset">The Sunset Suite</option>
+          <option value="family">The Family Nook</option>
+        </select>
+
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact Us</h2>
+      <p>Email: hello@uphillhotel.fake</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Address: 101 Cozy Way, Hillside Town</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Uphill Hotel – Made with love by the Thompsons.</p>
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

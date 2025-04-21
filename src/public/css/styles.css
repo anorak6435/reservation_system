@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('/img/hills-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #efefef;
+  }
+  .header {
+    background-color: #f8e8d0;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 3px solid #e1cfc2;
+    color: #3e3e3e;
+  }
+  .header h1 {
+    font-family: 'Georgia', serif;
+    color: #6d4c41;
+  }
+  .nav a {
+    margin: 0 1rem;
+    color: #6d4c41;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  .section {
+    padding: 3rem 2rem;
+  }
+  .room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    color: #3e3e3e;
+  }
+  .room-card {
+    flex: 1 1 300px;
+    background-color: #fff8f0;
+    border: 1px solid #e5d7c6;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+  }
+  #reservation-form {
+    max-width: 500px;
+    margin: auto;
+    color: #3e3e3e;
+    background-color: #fff8f0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+  }
+  #reservation-form label {
+    margin-top: 1rem;
+  }
+  #reservation-form button {
+    margin-top: 1.5rem;
+    background-color: #a1887f;
+    color: white;
+  }
+  #reservation-form button:hover {
+    background-color: #8d6e63;
+  }
+  .coffee-btn {
+    background-color: #a1887f;
+    color: white;
+  }
+  .coffee-btn:hover {
+    background-color: #8d6e63;
+  }
+  .footer {
+    color: #3e3e3e;
+    background-color: #f8e8d0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
